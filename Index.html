@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SK Salon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-pink-600 text-white sticky top-0 z-50 shadow">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-4">
+      <h1 class="text-2xl font-bold">SK Salon</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+          <li><a href="#services" class="hover:text-yellow-300">Services</a></li>
+          <li><a href="#about" class="hover:text-yellow-300">About</a></li>
+          <li><a href="#testimonials" class="hover:text-yellow-300">Reviews</a></li>
+          <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="text-center py-20 bg-gradient-to-br from-pink-200 to-pink-100">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Welcome to SK Salon</h2>
+    <p class="text-xl mb-6">Where Style Meets Elegance. Be Beautiful, Be You.</p>
+    <button onclick="bookNow()" class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full font-semibold transition">Book Now</button>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold text-pink-600 mb-10">Our Services</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-pink-100 p-6 rounded-lg shadow">
+          <h4 class="text-xl font-semibold mb-2">Hair Styling</h4>
+          <p>Trendy haircuts, blow-drys, and professional styling for all occasions.</p>
+        </div>
+        <div class="bg-pink-100 p-6 rounded-lg shadow">
+          <h4 class="text-xl font-semibold mb-2">Facials & Skin Care</h4>
+          <p>Rejuvenate your skin with our organic facial and skincare treatments.</p>
+        </div>
+        <div class="bg-pink-100 p-6 rounded-lg shadow">
+          <h4 class="text-xl font-semibold mb-2">Bridal Packages</h4>
+          <p>Full bridal makeover including makeup, hair, and skin glow rituals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-pink-50 text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h3 class="text-3xl font-bold text-pink-600 mb-6">About Sk Salon</h3>
+      <p class="text-lg leading-relaxed">
+        SK Salon is a premium beauty and hair care destination in town. With over 10 years of experience, our trained stylists and beauty therapists are committed to providing top-notch service. Whether you're preparing for a wedding, party, or just want to pamper yourself, we're here to help you shine!
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold text-pink-600 mb-10">What Our Clients Say</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-pink-100 p-6 rounded-xl shadow">
+          <p class="italic">"Absolutely loved the service! The team made me feel like a queen."</p>
+          <span class="block mt-4 font-semibold text-pink-700">– Nadeesha R.</span>
+        </div>
+        <div class="bg-pink-100 p-6 rounded-xl shadow">
+          <p class="italic">"Best bridal makeover in town. Highly recommended!"</p>
+          <span class="block mt-4 font-semibold text-pink-700">– Dilani M.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-pink-50">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold text-pink-600 mb-8">Get in Touch</h3>
+      <form onsubmit="submitForm(event)" class="space-y-6 max-w-xl mx-auto text-left">
+        <input type="text" placeholder="Your Name" required class="w-full p-3 rounded-md border border-gray-300" />
+        <input type="email" placeholder="Your Email" required class="w-full p-3 rounded-md border border-gray-300" />
+        <textarea rows="5" placeholder="Your Message" required class="w-full p-3 rounded-md border border-gray-300"></textarea>
+        <button type="submit" class="w-full bg-pink-600 hover:bg-pink-700 text-white py-3 rounded-md font-semibold">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-600 text-white text-center py-4">
+    <p>&copy; 2025 SK Salon. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function bookNow() {
+      alert("Booking coming soon! Call us for appointments.");
+    }
+
+    function submitForm(e) {
+      e.preventDefault();
+      alert("Thank you for contacting SK Salon!");
+    }
+  </script>
+</body>
+</html>
